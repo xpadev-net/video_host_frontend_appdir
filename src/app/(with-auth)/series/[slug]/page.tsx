@@ -24,7 +24,7 @@ const SearchPage:FC<Props> = ({params}) => {
     return <></>;
   }
   if (result.code === "401") {
-    router.push(`/login?callback=${encodeURIComponent(location.href)}`);
+    router.push(`/login?callback=${encodeURIComponent(location.pathname)}`);
     return <></>;
   }
   if (result.code === "404") {

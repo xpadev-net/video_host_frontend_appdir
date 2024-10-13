@@ -25,7 +25,7 @@ const SearchPage:FC<Props> = ({params}) => {
     return <></>;
   }
   if (result.status === "fail") {
-    router.push(`/login?callback=${encodeURIComponent(location.href)}`);
+    router.push(`/login?callback=${encodeURIComponent(location.pathname)}`);
     return <></>;
   }
   if (result.data.movies.length < 1 && result.data.series.length < 1) {

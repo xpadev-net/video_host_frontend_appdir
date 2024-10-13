@@ -49,7 +49,7 @@ const Search_ = ({ className }: props, ref: ForwardedRef<HTMLInputElement>) => {
       );
       if (suggest.status === "fail") {
         router.push(
-          `/login?callback=${encodeURIComponent(location.href)}`,
+          `/login?callback=${encodeURIComponent(location.pathname)}`,
         );
         return;
       }

@@ -9,7 +9,7 @@ const Logout = () => {
   const logout = () => {
     void (async () => {
       await request("/logout/");
-      router.push(`/login?callback=${encodeURIComponent(location.href)}`);
+      router.push(`/login?callback=${encodeURIComponent(location.pathname)}`);
     })();
   };
   return (

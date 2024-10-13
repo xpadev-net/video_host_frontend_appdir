@@ -19,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.74.1",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "valibot": "^0.42.1"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -18,7 +18,7 @@ const MobileHeader = ({ className }: props) => {
 
   useEffect(() => {
     setIsInputActive(false);
-  }, [location.href]);
+  }, [location.pathname]);
 
   const onSearchButtonClick = () => {
     setIsInputActive(true);

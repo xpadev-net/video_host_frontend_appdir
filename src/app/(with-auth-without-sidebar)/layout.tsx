@@ -9,12 +9,8 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-      <App showSidebar={false}>
-        {children}
-      </App>
-      </body>
-    </html>
+    <App showSidebar={false}>
+      {children}
+    </App>
   )
 }

@@ -43,7 +43,7 @@ const MoviePage:FC<Props> = ({params}) => {
       );
       if (result.code === "401") {
         router.push(
-          `/login?callback=${encodeURIComponent(location.href)}`,
+          `/login?callback=${encodeURIComponent(location.pathname)}`,
         );
         return <></>;
       }
